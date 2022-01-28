@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 env:
-  EXPORT_NAME: NAME-OF-YOUR-GAME
+  EXPORT_NAME: Duotron
   GODOT_VERSION: 3.4.2
 
 jobs:
@@ -44,7 +44,7 @@ jobs:
         env:
           BUTLER_CREDENTIALS: ${{ secrets.BUTLER_API_KEY }}
           CHANNEL: web
-          ITCH_GAME: DUOTRON
+          ITCH_GAME: Duotron
           ITCH_USER: Pir0_C0mder
           PACKAGE: project/${{ env.EXPORT_NAME }}/build/web
 
