@@ -1,0 +1,20 @@
+[gd_scene format=2]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
+
+[node name="Panel" type="Panel" parent="KinematicBody2D"]
+margin_right = 769.0
+margin_bottom = 313.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextEdit" type="TextEdit" parent="KinematicBody2D/Panel"]
+margin_right = 763.0
+margin_bottom = 296.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="KinematicBody2D/Panel/TextEdit"]
+margin_right = 40.0
+margin_bottom = 40.0
