@@ -16,6 +16,8 @@ func reduce_health():
 	hel-=100
 	print("hel")
 	if(hel<=0):
+		
 		queue_free()
+		get_tree().change_scene("res://restart.tscn")
 	
 		
