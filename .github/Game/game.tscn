@@ -43,16 +43,6 @@ shape = SubResource( 1 )
 [node name="left" type="StaticBody2D" parent="."]
 position = Vector2( -3.10034, 274.462 )
 
-[node name="+veSignleft" type="Sprite" parent="left"]
-position = Vector2( 43.1276, 44.2355 )
-scale = Vector2( 0.828451, 1.44414 )
-texture = ExtResource( 5 )
-
-[node name="-veSign" type="Sprite" parent="left"]
-position = Vector2( 53.7392, 60.3212 )
-scale = Vector2( 0.700866, 1.25899 )
-texture = ExtResource( 4 )
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="left"]
 position = Vector2( 40.3044, 47.2516 )
 shape = SubResource( 2 )
@@ -60,16 +50,26 @@ shape = SubResource( 2 )
 [node name="right" type="StaticBody2D" parent="."]
 position = Vector2( 1031.38, 299.595 )
 
-[node name="+veSignright" type="Sprite" parent="right"]
-position = Vector2( -4.69098, 20.6097 )
-scale = Vector2( 0.835204, 1.43932 )
-texture = ExtResource( 5 )
-
-[node name="-veSign" type="Sprite" parent="right"]
-position = Vector2( 7.23413, 33.1697 )
-scale = Vector2( 0.729655, 1.23626 )
-texture = ExtResource( 4 )
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="right"]
 position = Vector2( 0, 19.1017 )
 shape = SubResource( 3 )
+
+[node name="-veSignright" type="Sprite" parent="."]
+position = Vector2( 1037.07, 332.765 )
+scale = Vector2( 0.739693, 1.23626 )
+texture = ExtResource( 4 )
+
+[node name="-veSignleft" type="Sprite" parent="."]
+position = Vector2( 50.6389, 334.783 )
+scale = Vector2( 0.700866, 1.25899 )
+texture = ExtResource( 4 )
+
+[node name="+veSignright" type="Sprite" parent="."]
+position = Vector2( 1026.73, 320.205 )
+scale = Vector2( 0.834245, 1.43932 )
+texture = ExtResource( 5 )
+
+[node name="+veSignleft" type="Sprite" parent="."]
+position = Vector2( 40.0273, 318.698 )
+scale = Vector2( 0.828451, 1.44414 )
+texture = ExtResource( 5 )

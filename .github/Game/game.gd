@@ -3,20 +3,20 @@ extends Node2D
 func _process(delta):
 	if Input.is_action_pressed("ui_left"):
 		
-		$"left/+veSignleft".visible=true
-		$"right/+veSignright".visibe=false
-		$"left/-veSign".visible=false
-		$"right/-veSign".visible=true
+		$"+veSignleft".visible=true
+		$"+veSignright".visibe=false
+		$"-veSignleft".visible=false
+		$"-veSignright".visible=true
 	elif Input.is_action_pressed("ui_right"):
-		$"left/+veSignleft".visible=false
-		$"right/+veSignright".visibe=true
-		$"left/-veSign".visible=true
-		$"right/-veSign".visible=false
+		$"+veSignleft".visible=false
+		$"+veSignright".visibe=true
+		$"-veSignright".visible=false
+		$"-veSignleft".visible=true
 	else:
-		$"left/+veSignleft".visible=false
-		$"right/+veSignright".visibe=false
-		$"left/-veSign".visible=true
-		$"right/-veSign".visible=true
+		$"+veSignleft".visible=false
+		$"+veSignright".visibe=false
+		$"-veSignleft".visible=true
+		$"-veSignright".visible=true
 		
 		
 	
