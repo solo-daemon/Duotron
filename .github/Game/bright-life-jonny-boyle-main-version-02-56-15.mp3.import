@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/bright-life-jonny-boyle-main-version-02-56-15.mp3-6d84cdcd0b8829678823d8bc480ce6a9.mp3str"
+
+[deps]
+
+source_file="res://bright-life-jonny-boyle-main-version-02-56-15.mp3"
+dest_files=[ "res://.import/bright-life-jonny-boyle-main-version-02-56-15.mp3-6d84cdcd0b8829678823d8bc480ce6a9.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

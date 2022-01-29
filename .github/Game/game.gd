@@ -40,9 +40,10 @@ func _on_Timer_timeout():
 	add_child(staar)
 	obj.position=rand_posn
 	staar.position=rand_posn
-	
+
 
 
 func _on_destroy_body_entered(body):
 	body.queue_free()
-	
+
+
