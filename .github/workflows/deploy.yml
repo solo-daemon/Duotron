@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 env:
-  EXPORT_NAME: Duotron
+  EXPORT_NAME: duotron
   GODOT_VERSION: 3.4.2
 
 jobs:
