@@ -85,7 +85,7 @@ position = Vector2( 112.646, -13.0696 )
 position = Vector2( 958.005, -16.0857 )
 
 [node name="Node2D" parent="." instance=ExtResource( 7 )]
-position = Vector2( 103.345, -52.2784 )
+position = Vector2( 358.606, 452.409 )
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.5

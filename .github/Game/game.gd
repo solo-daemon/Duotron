@@ -33,9 +33,9 @@ func _process(delta):
 	
 func _on_Timer_timeout():
 	var rand_posn  =rand_range(0,1)*(spawnPointf.position-spawnPointi.position)+spawnPointi.position
-#	var obj=obstacle.instance()
-#	add_child(obj)
-#	obj.position=rand_posn
+	var obj=obstacle.instance()
+	add_child(obj)
+	obj.position=rand_posn
 
 
 func _on_destroy_body_entered(body):

@@ -12,6 +12,10 @@ script = ExtResource( 2 )
 [node name="obstacle" type="RigidBody2D" parent="."]
 mass = 0.00102041
 gravity_scale = 3.0
+continuous_cd = 1
+contacts_reported = 1
+contact_monitor = true
+can_sleep = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="obstacle"]
 position = Vector2( -0.25, 0 )
@@ -21,6 +25,4 @@ shape = SubResource( 1 )
 scale = Vector2( 0.0735546, 0.219546 )
 texture = ExtResource( 1 )
 
-[connection signal="body_entered" from="obstacle" to="." method="_on_obstacle_body_entered"]
 [connection signal="body_entered" from="obstacle" to="." method="_on_Area2D_body_entered"]
-[connection signal="body_shape_entered" from="obstacle" to="." method="_on_obstacle_body_shape_entered"]
