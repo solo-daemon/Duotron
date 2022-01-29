@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 env:
-  EXPORT_NAME: Duotron
+  EXPORT_NAME: duotron
   GODOT_VERSION: 3.4.2
 
 jobs:
@@ -27,7 +27,7 @@ jobs:
           apt-get update && apt-get install -y rsync
       - name: Web Build
         run: |
-          cd project
+          cd Game
           mkdir ./$EXPORT_NAME
           rsync -Rr . ./$EXPORT_NAME
           cd $EXPORT_NAME
@@ -44,8 +44,8 @@ jobs:
         env:
           BUTLER_CREDENTIALS: ${{ secrets.BUTLER_API_KEY }}
           CHANNEL: web
-          ITCH_GAME: Duotron
-          ITCH_USER: Pir0_C0mder
+          ITCH_GAME: duotron
+          ITCH_USER: pir0-c0mder
           PACKAGE: project/${{ env.EXPORT_NAME }}/build/web
 
       - name: Notify Discord Channel
@@ -53,4 +53,4 @@ jobs:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
         uses: Ilshidur/action-discord@0.3.0
         with:
-          args: 'A game update is available at https://NAME-OF-YOUR-USER.itch.io/NAME-OF-YOUR-GAME !'
+          args: 'A game update is available at https://pir0-c0mder.itch.io/duotron !'
