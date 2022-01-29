@@ -1,0 +1,37 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://boi.gd" type="Script" id=1]
+[ext_resource path="res://instruction.jpeg" type="Texture" id=2]
+[ext_resource path="res://next.jpeg" type="Texture" id=3]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Instruction" type="Sprite" parent="."]
+position = Vector2( 510, 302 )
+scale = Vector2( 0.86802, 0.909023 )
+texture = ExtResource( 2 )
+
+[node name="Control" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="boi" type="Button" parent="Control"]
+margin_left = 407.0
+margin_top = 538.0
+margin_right = 566.0
+margin_bottom = 588.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="E5B89D51-154a-4508-9141-4707C5888df745005C" type="Sprite" parent="."]
+position = Vector2( 487, 564 )
+scale = Vector2( 0.597122, 0.83209 )
+texture = ExtResource( 3 )
+
+[connection signal="pressed" from="Control/boi" to="Control/boi" method="_on_Button_pressed"]
+[connection signal="pressed" from="Control/boi" to="Control/boi" method="_on_boi_pressed"]
