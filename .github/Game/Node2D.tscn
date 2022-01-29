@@ -1,9 +1,7 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Node2D.gd" type="Script" id=1]
-[ext_resource path="res://-ve Sign.png" type="Texture" id=2]
 [ext_resource path="res://Ball icon_ccexpress.png" type="Texture" id=3]
-[ext_resource path="res://+ve Sign.png" type="Texture" id=4]
 [ext_resource path="res://Sprite.gd" type="Script" id=5]
 [ext_resource path="res://icon2.gd" type="Script" id=6]
 [ext_resource path="res://BallIconCcexpress.gd" type="Script" id=7]
@@ -14,25 +12,21 @@ script = ExtResource( 1 )
 [node name="+veSign" type="Sprite" parent="."]
 position = Vector2( 42, 301.5 )
 scale = Vector2( 1, 1.42686 )
-texture = ExtResource( 4 )
 
 [node name="+veSign2" type="Sprite" parent="."]
 position = Vector2( 977, 300.75 )
 scale = Vector2( 1, 1.44484 )
-texture = ExtResource( 4 )
 
 [node name="-veSign" type="Sprite" parent="."]
 position = Vector2( 57, 314 )
 scale = Vector2( 0.915033, 1.22966 )
-texture = ExtResource( 2 )
 
 [node name="-veSign2" type="Sprite" parent="."]
 position = Vector2( 993, 312.5 )
 scale = Vector2( 0.934641, 1.2387 )
-texture = ExtResource( 2 )
 
 [node name="BallIconCcexpress" type="Sprite" parent="."]
-position = Vector2( 495, 452 )
+position = Vector2( 615, 76.0001 )
 scale = Vector2( 0.320388, 0.376697 )
 texture = ExtResource( 3 )
 script = ExtResource( 7 )
