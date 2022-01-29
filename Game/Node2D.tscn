@@ -26,7 +26,11 @@ position = Vector2( 993, 312.5 )
 scale = Vector2( 0.934641, 1.2387 )
 
 [node name="BallIconCcexpress" type="Sprite" parent="."]
+<<<<<<< Updated upstream
 position = Vector2( 726, 159 )
+=======
+position = Vector2( 560, 61 )
+>>>>>>> Stashed changes
 scale = Vector2( 0.320388, 0.376697 )
 texture = ExtResource( 3 )
 script = ExtResource( 7 )
